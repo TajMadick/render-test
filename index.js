@@ -29,6 +29,7 @@ const requestLogger = (request, response, next) => {
 }
 
 app.use(cors())
+app.use(express.static('dist'))
 app.use(express.json())
 app.use(requestLogger)
 
@@ -91,7 +92,6 @@ app.put('/api/notes/:id', (request, response) => {
     originalNote.important = body.important ?? originalNote.important
 
     console.log(originalNote);
-    
 
     response.json(originalNote)
 })
