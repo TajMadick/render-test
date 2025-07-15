@@ -1,0 +1,16 @@
+# Node.js-Projekte – Standard .gitignore
+
+# Verzeichnisse
+node_modules/
+requests/
+
+# Umgebungsvariablen
+.env
+
+# Logs und temporäres
+*.log
+*.tmp
+
+# Systemdateien
+.DS_Store
+Thumbs.db
